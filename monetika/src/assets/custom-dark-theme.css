@@ -1,0 +1,101 @@
+:root {
+   /* Общие цвета */
+   --primary-color: #4caf50; /* Зеленый акцент */
+   --primary-color-text: #ffffff;
+   --surface-a: #121212; /* Основной тёмный фон */
+   --surface-b: #1e1e1e; /* Вторичный фон */
+   --surface-border: #2e2e2e; /* Цвет границ */
+   --text-color: #e0e0e0; /* Основной текст */
+   --text-color-secondary: #b0b0b0; /* Вторичный текст */
+   --input-bg: #2e2e2e; /* Фон ввода */
+   --input-border: #444444; /* Граница ввода */
+   --hover-bg: #333333; /* Фон при наведении */
+   --focus-border: #4caf50; /* Граница при фокусе */
+ 
+   /* Для компонентов */
+   --button-bg: var(--primary-color);
+   --button-color: var(--primary-color-text);
+   --button-border: var(--primary-color);
+   --button-hover-bg: #45a049;
+   --button-hover-border: #45a049;
+ 
+   /* Shadow */
+   --box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+ }
+ 
+ /* Применение общих стилей */
+ body {
+   background-color: var(--surface-a);
+   color: var(--text-color);
+ }
+ 
+ button, input, textarea {
+   background-color: var(--input-bg);
+   color: var(--text-color);
+   border: 1px solid var(--input-border);
+ }
+ 
+ button:hover {
+   background-color: var(--button-hover-bg);
+   border-color: var(--button-hover-border);
+ }
+ 
+ button:focus,
+ input:focus,
+ textarea:focus {
+   outline: 2px solid var(--focus-border);
+ }
+ 
+ a {
+   color: var(--primary-color);
+ }
+ a:hover {
+   color: #69d27d;
+ }
+ 
+ /* Компоненты PrimeVue */
+ .p-button {
+   background-color: var(--button-bg);
+   color: var(--button-color);
+   border: 1px solid var(--button-border);
+ }
+ .p-button:hover {
+   background-color: var(--button-hover-bg);
+   border-color: var(--button-hover-border);
+ }
+ 
+ .p-inputtext {
+   background-color: var(--input-bg);
+   color: var(--text-color);
+   border: 1px solid var(--input-border);
+ }
+ 
+ .p-dialog .p-dialog-header {
+   background-color: var(--surface-b);
+   color: var(--text-color);
+ }
+ 
+ .p-dialog .p-dialog-content {
+   background-color: var(--surface-a);
+ }
+ 
+ .p-datatable th {
+   background-color: var(--surface-b);
+   color: var(--text-color-secondary);
+ }
+ 
+ .p-datatable td {
+   background-color: var(--surface-a);
+   color: var(--text-color);
+ }
+ 
+ .p-dropdown {
+   background-color: var(--input-bg);
+   color: var(--text-color);
+   border: 1px solid var(--input-border);
+ }
+ 
+ .p-dropdown-item:hover {
+   background-color: var(--hover-bg);
+ }
+ 
